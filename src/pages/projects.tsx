@@ -1,17 +1,17 @@
-import {type NextPage } from 'next'
-import Head from 'next/head'
-import Image, {type StaticImageData } from 'next/image'
-import Link from 'next/link'
-import React from 'react'
-import AnimatedText from '~/component/AnimatedText'
-import Layout from '~/component/Layout'
-import { GithubIcon } from '~/component/icon'
-import recipes from '../../public/images/project/recipes.png'
-import ankasa from '../../public/images/project/ankasa.png'
-import native from '../../public/images/project/native.png'
-import peworld from '../../public/images/project/peworld.png'
-import { motion, } from 'framer-motion'
-import TransitionEffect from '~/component/TransitionEffect'
+import {type NextPage } from 'next';
+import Head from 'next/head';
+import Image, {type StaticImageData } from 'next/image';
+import Link from 'next/link';
+import React from 'react';
+import AnimatedText from '~/component/AnimatedText';
+import Layout from '~/component/Layout';
+import { GithubIcon } from '~/component/icon';
+import recipes from '../../public/images/recipes.png';
+import ankasa from '../../public/images/ankasa.png';
+import native from '../../public/images/native.png';
+import peworld from '../../public/images/peworld.png';
+import { motion, } from 'framer-motion';
+import TransitionEffect from '~/component/TransitionEffect';
 
 const FramerImage = motion(Image)
 
