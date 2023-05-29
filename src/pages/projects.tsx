@@ -128,7 +128,7 @@ const Project: NextPage = () => {
                             type='Website'
                             title='Pew World'
                             image={peworld}
-                            link='https://ankasa-flight.vercel.app/'
+                            link='http://pew-world-fe.vercel.app'
                             github='https://github.com/basriibrahim1/pew-world-fe.git'
                             text='Visit'
                         />
