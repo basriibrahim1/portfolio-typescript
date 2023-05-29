@@ -44,8 +44,8 @@ type AnimatedTextProps = {
 
 const AnimatedText: React.FC<AnimatedTextProps> = ({text, className=""}) => {
   return (
-    <div className='w-full py-2 flex items-center justify-center overflow-hidden'>
-        <motion.h1 className={` w-full text-dark font-bold capitalize text-6xl ${className}`} variants={container} initial="hidden" animate="visible">
+    <div className='w-full py-2 sm:py-0 flex items-center justify-center overflow-hidden'>
+        <motion.h1 className={` w-full text-dark font-bold dark:text-light capitalize text-6xl ${className}`} variants={container} initial="hidden" animate="visible">
             {text.split("").map((item, index) => (
                 <motion.span variants={child} key={index} className='inline-block'>{item === ' ' ? "\u00A0" : item}</motion.span>
             ))}

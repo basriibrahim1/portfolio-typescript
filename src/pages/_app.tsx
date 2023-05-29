@@ -19,7 +19,7 @@ const MyApp: AppType = ({ Component, pageProps }) => {
             <link rel="icon" href="/favicon.ico" />
       </Head>
         <Navbar/>
-        <main className={`${monserat.className} font-mont bg-light w-full min-h-screen`}>
+        <main className={`${monserat.className} font-mont bg-light dark:bg-dark w-full min-h-screen`}>
             <Component {...pageProps} />
         </main>
         <Footer/>

@@ -8,6 +8,8 @@ import { useEffect, useRef } from 'react'
 import { useInView, useMotionValue, useSpring } from 'framer-motion'
 import Skills from '~/component/Skills'
 import Experience from '~/component/Experience'
+import Education from '~/component/Education'
+import TransitionEffect from '~/component/TransitionEffect'
 
 type AnimatedNumberProps = {
     value: number
@@ -45,46 +47,41 @@ const About: NextPage = () => {
         <Head>
             <title>Portfolio | About Page</title>
         </Head>
-        <main className='flex w-full flex-col items-center justify-center'>
+        <TransitionEffect />
+        <main className='flex w-full flex-col items-center justify-center dark:text-light'>
             <Layout className='pt-16'>
-                <AnimatedText text='Live until you die' className='mt-16'/>
-                <div className='grid w-full grid-cols-8 gap-16'>
-                    <div className='col-span-3 flex flex-col items-start justify-start'>
-                        <h2 className='mb-4 text-lg font-bold uppercase text-dark/75'>Biography</h2>
+                <AnimatedText text='Work Hard, Dream Big and Never Give Up!' className='mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:!mb-8 !text-center'/>
+                <div className='grid w-full grid-cols-8 gap-16 sm:gap-8'>
+                    <div className='col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8'>
+                        <h2 className='mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75'>Biography</h2>
                         <p className='font-medium'>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas maiores ad dolore fuga aliquam hic adipisci architecto dolores, error a corrupti modi aut quod. Reprehenderit ducimus et laudantium ipsa optio? Eos dolores animi recusandae fugit est
+                            Hello Everyone, I am bootcamp graduated from Pijarcamp as a fullstack developer specializing in website and mobile app development. With strong skills in frontend technologies like HTML, CSS, and JavaScript, I can create attractive and responsive user interfaces using frameworks such as React, Next JS using Typescript/React.  
                         </p>
                         <p className='my-4 font-medium'>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum unde, recusandae in numquam, architecto, vitae nulla voluptates beatae ratione quod minima! Fugit itaque tenetur accusantium unde, odit, temporibus, eaque iure possimus illum quos id architecto deleniti nisi ex et voluptatem.
+                            Backend, I excel in JavaScript (Node.js) and can build secure APIs with frameworks like Express using ORM Prisma.
                         </p>
                         <p className='my-4 font-medium'>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum unde, recusandae in numquam, architecto, vitae nulla voluptates beatae ratione quod minima! Fugit itaque tenetur accusantium unde, odit, temporibus, eaque iure possimus illum quos id architecto deleniti nisi ex et voluptatem.
+                        I also have experience in cross-platform mobile app development using React Native. With a solid understanding of databases and a passion for staying up-to-date with the latest technologies, I can deliver innovative solutions that meet business needs and provide excellent user experiences.
                         </p>
                     </div>
 
-                <div className='col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 items-center justify-center flex'>
-                    <div className='absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-3xl bg-dark '/>
-                    <Image src={profilePic} alt='user' className=''/>
+                <div className='col-span-3 xl:col-span-4  relative h-max rounded-2xl border-2 border-solid border-dark dark:border-light bg-light dark:bg-dark  p-8 items-center justify-center flex md:order-1 md:col-span-8 '>
+                    <div className='absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-3xl bg-dark dark:bg-light'/>
+                    <Image src={profilePic} alt='user' className='w-full h-auto rounded-2xl' priority sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/>
                 </div>
                 
-                <div className='col-span-2 flex flex-col items-end justify-between '>
-                    <div className='flex flex-col items-end justify-center'>
-                        <span className='inline-block text-7xl font-bold'>
-                            <AnimatedNumber value={50}/>
-                        </span>
-                        <h2 className='text-xl font-medium capitalize text-dark/75'>Satisfied Clients</h2>
-                    </div>
-                    <div className='flex flex-col items-end justify-center'>
-                        <span className='inline-block text-7xl font-bold'>
+                <div className='col-span-2 flex flex-col items-end justify-around xl:col-span-8 xl:flex-row xl:items-center md:order-3'>
+                    <div className='flex flex-col items-end justify-center xl:items-center'>
+                        <span className='inline-block text-7xl font-bold md:text-6xl sm:text-5xl xd:text-4xl'>
                             <AnimatedNumber value={4}/>
                         </span>
-                        <h2 className='text-xl font-medium capitalize text-dark/75'>Project Completed</h2>
+                        <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xd:text-sm'>Project Completed</h2>
                     </div>
-                    <div className='flex flex-col items-end justify-center'>
-                        <span className='inline-block text-7xl font-bold'>
+                    <div className='flex flex-col items-end justify-center xl:items-center'>
+                        <span className='inline-block text-7xl font-bold md:text-6xl sm:text-5xl xd:text-4xl'>
                             <AnimatedNumber value={1}/>
                         </span>
-                        <h2 className='text-xl font-medium capitalize text-dark/75'>Years Experiences</h2>
+                        <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xd:text-sm'>Years Experiences</h2>
                     </div>
                 </div>                              
 
@@ -92,6 +89,7 @@ const About: NextPage = () => {
 
                 <Skills />
                 <Experience />
+                <Education />
             </Layout>
         </main>
     </>
