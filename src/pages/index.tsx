@@ -36,7 +36,7 @@ const Home: NextPage = () => {
                         <AnimatedText text="Hi! i am Basri Ibrahim" className="!text-7xl xl:!text-5xl xl:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"/>
                         <p className="text-base font-medium my-4 md:text-sm sm:text-xs items-start justify-start"><i>Fullstack Website & Mobile Developer</i></p>
                         <div className="flex items-center self-start mt-2 xl:self-center">
-                            <Link className="flex items-center bg-dark dark:bg-light text-light dark:text-dark p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:dark:bg-dark hover:text-dark border-2 hover:dark:text-light border-solid border-transparent hover:border-dark hover:dark:border-light md:p-2 md:px-4 md:text-base" href='https://drive.google.com/uc?export=download&id=1hTy7ClCDCHW_AZgxvAUVdikZQuZ4nwHf' target="_blank" download={true}>Resume <LinkArrow className="w-6 ml-1"/> </Link>
+                            <Link className="flex items-center bg-dark dark:bg-light text-light dark:text-dark p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:dark:bg-dark hover:text-dark border-2 hover:dark:text-light border-solid border-transparent hover:border-dark hover:dark:border-light md:p-2 md:px-4 md:text-base" href='https://drive.google.com/uc?export=download&id=1GsqTtDp6Hiq4NzOkRaPfUUdWovHlRF-p' target="_blank" download={true}>Resume <LinkArrow className="w-6 ml-1"/> </Link>
                             <Link className="ml-4 text-lg font-medium capitalize text-dark p-3 dark:text-light underline md:text-base " href='mailto:basriibrahim67067@gmail.com' target="_blank">Mail me</Link>
                         </div>
                     </div>
